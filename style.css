@@ -14,22 +14,30 @@ header {
     background: var(--light);      /* Couleur douce */
     box-shadow: var(--shadow);     /* Ombre */
 	background:#0097B2;
+	color: white;
 }
 
 
 header .logo {
-    width: 70px;
+    width: 150px;
 }
 
 header nav a {
     margin-left: 20px;
     text-decoration: none;         /* enlève le soulignement */
     font-weight: bold;
-    color: var(--dark);
+    color:white;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 .hero {
-    background: url('voyage.jpg') center/cover; /* image de fond */
+    background: url('avion.jpg') center/cover; /* image de fond */
     padding: 120px 20px; /* grand espace autour du texte */
     text-align: center;  /* texte centré */
     color: white;
@@ -44,8 +52,6 @@ header nav a {
     border-radius: 8px;           /* arrondit les coins */
     text-decoration: none;
 }
-
-
 
 .cards-container {
 	display: flex; 
