@@ -1,0 +1,200 @@
+/* :root permet de définir des variables disponibles partout dans la page */
+:root {
+    --primary: #0077b6;
+    --dark: #023047;
+    --light: #f7f7f7;
+    --shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+header {
+    display: flex;                 /* Aligne logo + menu sur une ligne */
+    justify-content: space-between; /* Espacement automatique */
+    align-items: center;           /* Centrage vertical */
+    padding: 20px;
+    background: var(--light);      /* Couleur douce */
+    box-shadow: var(--shadow);     /* Ombre */
+	background:#0097B2;
+}
+
+
+header .logo {
+    width: 70px;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;         /* enlève le soulignement */
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.hero {
+    background: url('voyage.jpg') center/cover; /* image de fond */
+    padding: 120px 20px; /* grand espace autour du texte */
+    text-align: center;  /* texte centré */
+    color: white;
+}
+
+.btn-primary {
+    display: inline-block;        /* permet d’ajouter padding */
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;           /* arrondit les coins */
+    text-decoration: none;
+}
+
+
+
+.cards-container {
+	display: flex; 
+	gap: 30px; 
+	justify-content: center; 
+	padding: 50px;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 300px; 
+	padding: 15px; 
+	background: white; 
+	border-radius: 10px; 
+	text-align: center; 
+	text-decoration: none; 
+	color: black; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover{
+	transform: translateY(-8px); 
+	box-shadow: 0 8px 20px rgba(0,0,0,0.2)
+}
+
+.card img {
+	width: 100%; 
+	height: 200px;
+	object-fit: cover; 
+	border-radius: 8px;
+}
+
+.card h3 {
+	margin: 10px 0 5px; 
+	font-size:18px;
+}
+
+.card p{
+	font-size: 14px;
+}
+
+.tableau{
+	text-align: center; 
+	padding: 40px;
+}
+
+
+/* Centrer le tableau et lui donner un style moderne */
+table.comparatif {
+    width: 80%;                 /* largeur du tableau */
+    margin: auto;               /* centre le tableau */
+    border-collapse: collapse;  /* supprime espaces entre cellules */
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ombre moderne */
+    border-radius: 10px;        /* arrondi */
+    overflow: hidden;           /* permet arrondi complet */
+}
+
+/* En-tête du tableau */
+.comparatif th {
+    background: #0097B2;       /* bleu principal */
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Style des cellules */
+.comparatif td {
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd; /* ligne séparatrice légère */
+}
+
+/* Alternance des couleurs des lignes */
+.comparatif tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+/* Survol d’une ligne : effet interactif */
+.comparatif tr:hover {
+    background: #dff6ff;
+}
+
+.contact-section {
+    padding: 50px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+/* Formulaire vertical et centré */
+.contact-form {
+    display: flex;
+    flex-direction: column;    /* les éléments les uns sous les autres */
+    width: 50%;
+    margin: auto;              /* centre le formulaire */
+    gap: 15px;                 /* espace entre champs */
+}
+
+/* style des champs */
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;          /* l’utilisateur peut l’agrandir */
+}
+
+/* Section du bouton d'avis */
+.avis-section {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Bouton secondaire */
+.btn-secondary {
+    padding: 12px 25px;
+    background: #00b4d8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #0091ad;
+}
+
+footer {
+    background: #023047;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer nav a {
+    color: #90e0ef;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: white;
+}
