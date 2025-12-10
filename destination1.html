@@ -2,67 +2,109 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>La Sagrada Familia</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>La Sagrada Família – VPTours</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- header-->
-<header>
-<img src="..." alt="Logo Sagrada Familia" class="logo"> <!--LOGO-->
-<nav>
-<a href="index.html">VPTours<a>
-<a href="#destination">Destinations</a>
-<a href="#contact">Contactez-nous</a>
-<a href="#form">Avis</a>
-</nav>
+<header class="header header-souspage1">
+    <img src="1.png" alt="Logo VPTours" class="logo">
+    <nav>
+        <a href="index.html">VPTours</a>
+        <a href="index.html#destination">Destinations</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="form.html">Avis</a>
+    </nav>
 </header>
 
-<section class="hero2">
-<h1> La Sagrada Familia </h1>
+<section class="hero-destination" style="background-image: url('dest1.jpg');">
+    <h1>La Sagrada Família</h1>
 </section>
-</div>
 
-<img src="dest1.jpg" alt="La Sagrada Familia">
+<section class="destination-content">
 
-<h3> Localisation du site <h3>
-<h3> Accès <h3>
-<h3> Notoriété du site<h3>
-<h3> Histoire du site <h3>
-<h3> Nombre annuel de visites <h3>
-<h3> Beauté du site <h3>
+    <h2>Présentation</h2>
+    <p>
+        La Sagrada Família est l’un des monuments les plus emblématiques d’Espagne. Chef-d'œuvre d’Antoni Gaudí,
+        elle attire chaque année plus de 4,5 millions de visiteurs et fascine par son architecture unique mêlant
+        gothique et modernisme catalan.
+    </p>
 
+    <h2>Localisation</h2>
+    <ul>
+        <li>Située dans le quartier de l’Eixample, Barcelone</li>
+        <li>Adresse : Carrer de Mallorca, 401, 08013 Barcelona</li>
+        <li>À proximité du métro Sagrada Família (L2 et L5)</li>
+        <li>Accès rapide depuis les grandes attractions (Parc Güell, Passeig de Gràcia)</li>
+    </ul>
 
+    <h2>Accès</h2>
+    <ul>
+        <li>Métro L2 et L5 à quelques pas</li>
+        <li>Bus nombreux dans le secteur</li>
+        <li>Parking limité / parkings payants proches</li>
+        <li>Très bonne accessibilité PMR (ascenseurs pour les tours)</li>
+    </ul>
 
+    <h2>Notoriété & Histoire</h2>
+    <p><strong>Notoriété :</strong></p>
+    <ul>
+        <li>Chef-d’œuvre de Gaudí, symbole du modernisme catalan</li>
+        <li>Classée au Patrimoine mondial de l’UNESCO</li>
+        <li>Monument parmi les plus visités d’Europe</li>
+    </ul>
+    <p><strong>Histoire :</strong></p>
+    <ul>
+        <li>Construction débutée en 1882</li>
+        <li>Reprise par Gaudí en 1883, qui y consacra 40 ans</li>
+        <li>Toujours en construction, financée par dons et visiteurs</li>
+        <li>Fin prévue vers 2026</li>
+    </ul>
 
-<!-- formulaire de contact-->
-<section id="contact" class="contact-section">
+    <h2>Fréquentation</h2>
+    <p>Environ <strong>4,5 millions de visiteurs/an</strong>, l’un des monuments les plus visités d’Espagne.</p>
 
-    <h3>Contactez-nous</h3>
+    <h2>Beauté du site</h2>
+    <ul>
+        <li>Façades sculptées : Nativité, Passion, Gloire</li>
+        <li>Intérieur spectaculaire, baigné de lumière colorée</li>
+        <li>Colonnes inspirées des arbres</li>
+        <li>Vues panoramiques depuis les tours</li>
+    </ul>
 
-    <form class="contact-form">
+</section>
 
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+<section class="media-section">
+        <h2>Découvrez en Vidéo</h2>
+        <div class="video-container">
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+			<iframe 
+			src="https://geo.dailymotion.com/player.html?video=x4uln0p"
+			style="width:100%; 
+			height:100%; 
+			position:absolute; 
+			left:0px;
+			top:0px; 
+			overflow:hidden; 
+			border:none;"
+			allowfullscreentitle="Dailymotion Video Player"
+			allow="web-share">
+			</iframe>
+			</div>
+        </div>
 
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+        <h2>Musique fiesta</h2>
+        <div class="audio-container">
+            <audio controls>
+                <source src="esp.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+    </section>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
-
-        <button type="submit" class="btn-primary">Envoyer</button>
-
-    </form>
-
-
-<!-- #footer-->
 <footer>
-
     <p>© 2025 VPTours — Tous droits réservés.</p>
-
 </footer>
-
 
 </body>
 </html>
