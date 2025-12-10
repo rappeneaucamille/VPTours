@@ -2,63 +2,110 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>La Sagrada Familia</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>The Sunmit — VPTours</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- header-->
-<header>
-<img src="..." alt="Logo Sagrada Familia" class="logo"> <!--LOGO-->
-<nav>
-<a href="index.html">VPTours<a>
-<a href="#destination">Destinations</a>
-<a href="#contact">Contactez-nous</a>
-<a href="#form">Avis</a>
-</nav>
+<header class="header header-souspage2">
+    <img src="logo_usa.png" alt="Logo Au Sommet Du Monde" class="logo">
+    <nav>
+        <a href="index.html">VPTours</a>
+        <a href="index.html#destination">Destinations</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="form.html">Avis</a>
+    </nav>
 </header>
 
-<img src="dest2.jpg" alt="La Sagrada Familia">
+<section class="hero-destination" style="background-image: url('dest2.jpg');">
+    <h1>The Sunmit – New York</h1>
+</section>
 
+<section class="destination-content">
 
-<h3> Localisation du site <h3>
-<h3> Accès <h3>
-<h3> Notoriété du site<h3>
-<h3> Histoire du site <h3>
-<h3> Nombre annuel de visites <h3>
-<h3> Beauté du site <h3>
+    <h2>Présentation</h2>
+    <p>
+        SUMMIT One Vanderbilt est l’un des observatoires les plus modernes et immersifs de New York.
+        Ouvert en 2021, il propose une expérience sensorielle unique, entre art, miroirs et vues
+        panoramiques à couper le souffle.
+    </p>
 
+    <h2>Localisation</h2>
+    <ul>
+        <li>Situé dans Midtown East (Manhattan)</li>
+        <li>Accolé à Grand Central Terminal</li>
+        <li>Adresse : 45 E 42nd Street</li>
+        <li>À proximité de l’Empire State Building, Chrysler Building, Bryant Park</li>
+    </ul>
 
+    <h2>Accès</h2>
+    <ul>
+        <li>Métro : lignes 4, 5, 6, 7 et S (station Grand Central)</li>
+        <li>Trains Metro-North disponibles</li>
+        <li>Bus, taxis et VTC très nombreux</li>
+        <li>Accessibilité PMR excellente</li>
+    </ul>
 
+    <h2>Notoriété & Histoire</h2>
+    <p><strong>Notoriété :</strong></p>
+    <ul>
+        <li>Ouvert en 2021</li>
+        <li>Miroirs à l’infini, skyboxes en verre suspendues</li>
+        <li>Ascenseur extérieur « Ascent »</li>
+        <li>Vue exceptionnelle sur Manhattan</li>
+    </ul>
 
-<!-- formulaire de contact-->
-<section id="contact" class="contact-section">
+    <p><strong>Histoire :</strong></p>
+    <ul>
+        <li>One Vanderbilt construit entre 2017 et 2020</li>
+        <li>Conçu comme une œuvre artistique immersive</li>
+        <li>Collaboration entre architectes et artistes contemporains</li>
+    </ul>
 
-    <h3>Contactez-nous</h3>
+    <h2>Visites</h2>
+    <p>Plusieurs millions de visiteurs/an depuis son ouverture.</p>
 
-    <form class="contact-form">
+    <h2>Beauté du site</h2>
+    <ul>
+        <li>Panorama à 360°</li>
+        <li>Miroirs, jeux de lumière et ambiance futuriste</li>
+        <li>Skyboxes avec vue sous les pieds</li>
+        <li>Couchers de soleil spectaculaires</li>
+    </ul>
 
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+</section>
 
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+<section class="media-section">
+        <h2>Découvrez en Vidéo</h2>
+        <div class="video-container">
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+			<iframe 
+			src="https://geo.dailymotion.com/player.html?video=x84z03m"
+			style="width:100%; 
+			height:100%; 
+			position:absolute; 
+			left:0px; 
+			top:0px; 
+			overflow:hidden; 
+			border:none;
+			"allowfullscreentitle="Dailymotion Video Player"
+			allow="web-share">
+			</iframe>
+			</div>
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+        <h2>Musique fiesta</h2>
+        <div class="audio-container">
+            <audio controls>
+                <source src="usa.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+    </section>
 
-        <button type="submit" class="btn-primary">Envoyer</button>
-
-    </form>
-
-
-<!-- #footer-->
 <footer>
-
     <p>© 2025 VPTours — Tous droits réservés.</p>
-
 </footer>
-
 
 </body>
 </html>
