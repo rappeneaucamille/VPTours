@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
+<!-- header-->
+<header class="header header-accueil">
+<img src="1.png" alt="Logo VPTours" class="logo">
+<nav>
+<a href="index.html">VPTours<a>
+<a href="#destination">Destinations</a>
+<a href="#contact">Contactez-nous</a>
+<a href="#form">Avis</a>
+</nav>
+</header>
+
 <form> 
 
 <fieldset>
+<legend> Formulaire de satisfaction </legend>
 	<div class="form-group">
 	<label for="nom">Nom:</label>
 	<input type="text" id="nom" placeholder="votre nom" required>
@@ -19,33 +32,32 @@
 	</div>
 	<div class="form-group">
 	<label for="nom">Numéro de téléphone:</label>
-	<input type="text" id="tel" placeholder="xx xx xx xx xx" required> 
+	<input type="text" id="tel" placeholder="xx xx xx xx xx" required pattern="0[0-9]{9}" title="Le numéro doit commencer par 0 et comporter 10 chiffres.">	
 	</div>
 	<div class="form-group">
-	<label for="nom">Mail:</label>
+	<label for="email">Mail:</label>
 	<input type="email" id="nom" placeholder="xxxxx@xxxx" >
 	</div>
-			<label for="genre">Site préféré:</label>
-			<div class="radio-group">
-				<div class="radio-option">
-					<input type="radio" id="esp" name="voyage">
-					<label for="esp">La Sagrada Familia</label>
-				</div>
-				<div class="radio-option">
-					<input type="radio" id="usa" name="voyage">
-					<label for="usa">The Summit</label>
-				</div>
-				<div class="radio-option">
-					<input type="radio" id="fr" name="voyage">
-					<label for="fr">Le Château de Chantilly</label>
-				</div>
+		<label>Site préféré:</label>
+		<div class="radio-group">
+			<div class="radio-option">
+				<input type="radio" id="esp" name="voyage">
+				<label for="esp">La Sagrada Familia</label>
 			</div>
-	</div>
-	<div class="form-group">
+			<div class="radio-option">
+				<input type="radio" id="usa" name="voyage">
+				<label for="usa">The Summit</label>
+			</div>
+			<div class="radio-option">
+				<input type="radio" id="fr" name="voyage">
+				<label for="fr">Le Château de Chantilly</label>
+			</div>
+		</div>
 		<label for="pays">Site(s) Visité(s):</label>
 		<div class="checkbox-group">
-		<div class="checkbox-option">La Sagrada Familia, Espagne </label>
-		
+		<div class="checkbox-option">
+			<input type="checkbox" id="1" name="voyage">
+			<label for="1"> La Sagrada Familia, Espagne </label>
 		</div>
 		<div class="checkbox-option">
 			<input type="checkbox" id="2" name="voyage">
@@ -55,8 +67,11 @@
 			<input type="checkbox" id="3" name="voyage">
 			<label for="3"> Le Château de Chantilly </label>
 		</div>
-	</div>
-	</div>
+		</div>
+		<div class="form-group">
+		<label for="pourquoi">Pourquoi avez-vous préféré ce voyage :</label>
+		<textarea id="pourquoi" name="explication_preference" rows="4" placeholder="Décrivez les raisons de votre choix (maximum 250 caractères)"></textarea>
+		</div>
 	
 	<button type="reset">EFFACER</button>
 	<button type="submit">ENVOYER</button>
