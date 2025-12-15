@@ -7,8 +7,8 @@
 }
 
 * {
-    box-sizing: border-box; /* C'est la règle magique ! */
-    margin: 0; /* Optionnel, mais fortement recommandé pour enlever les marges par défaut */
+    box-sizing: border-box; 
+    margin: 0; /* enlever les marges par défaut */
     padding: 0;
 }
 
@@ -31,12 +31,11 @@
     text-decoration: none;  /* enlève le soulignement */
     color:inherit;
 	font-weight: bold;
-    transition: 0.2s;
 	margin-left: 20px;
 }
 
 .header nav a:hover,
-.header nav a.active {
+.header nav a.active { 
     opacity: 0.8;
 }
 
@@ -73,14 +72,14 @@ img {
 }
 
 .hero {
-    background: url('avion.jpg') center/cover; /* image de fond */
-    padding: 120px 20px; /* grand espace autour du texte */
-    text-align: center;  /* texte centré */
+    background: url('avion.jpg') center/cover; /* image de fond, centrée, recouvre toute la surface*/
+    padding: 120px 20px;
+    text-align: center; 
     color: white;
 }
 
 .btn-primary {
-    display: inline-block;        /* permet d’ajouter padding */
+    display: inline-block;   /* permet d’ajouter padding */
     margin-top: 20px;
     padding: 12px 25px;
     background: var(--primary);
@@ -105,13 +104,12 @@ img {
 	text-align: center; 
 	text-decoration: none; 
 	color: black; 
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); /*ombre portée*/
 }
 
 .card:hover{
-	transform: translateY(-8px); 
-	box-shadow: 0 8px 20px rgba(0,0,0,0.2)
+	transform: translateY(-8px); /*déplacer l'élément de 8 pixels vers le haut*/
+	box-shadow: 0 8px 20px rgba(0,0,0,0.2) /*ombre portée*/
 }
 
 .card img {
@@ -130,45 +128,41 @@ img {
 	font-size: 14px;
 }
 
-.table{
+.tab{
 	text-align: center; 
 	padding: 40px;
 }
 
-
-/* Centrer le tableau et lui donner un style moderne */
-table.comparatif {
-    width: 80%;                 /* largeur du tableau */
+table.comparative {
+    width: 80%;                 
     margin: auto;               /* centre le tableau */
     border-collapse: collapse;  /* supprime espaces entre cellules */
     background: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ombre moderne */
-    border-radius: 10px;        /* arrondi */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ombre portée */
+    border-radius: 10px;
     overflow: hidden;           /* permet arrondi complet */
 }
 
-/* En-tête du tableau */
-.comparatif th {
-    background: #0097B2;       /* bleu principal */
+.comparative th {
+    background: #0097B2;    
     color: white;
     padding: 15px;
     font-size: 18px;
 }
 
-/* Style des cellules */
-.comparatif td {
+.comparative td {
     padding: 12px;
     font-size: 16px;
     border-bottom: 1px solid #ddd; /* ligne séparatrice légère */
 }
 
 /* Alternance des couleurs des lignes */
-.comparatif tr:nth-child(even) {
+.comparative tr:nth-child(even) {
     background: #f5f5f5;
 }
 
 /* Survol d’une ligne : effet interactif */
-.comparatif tr:hover {
+.comparative tr:hover {
     background: #dff6ff;
 }
 
@@ -178,7 +172,6 @@ table.comparatif {
     text-align: center;
 }
 
-/* Formulaire vertical et centré */
 .contact-form {
     display: flex;
     flex-direction: column;    /* les éléments les uns sous les autres */
@@ -202,13 +195,13 @@ table.comparatif {
     resize: vertical;          /* l’utilisateur peut l’agrandir */
 }
 
-/* Section du bouton d'avis */
-.avis-section {
+
+.opinion-section {
     text-align: center;
     padding: 40px;
 }
 
-/* Bouton secondaire */
+
 .btn-secondary {
     padding: 12px 25px;
     background: #00b4d8;
@@ -216,7 +209,6 @@ table.comparatif {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s;
 }
 
 .btn-secondary:hover {
@@ -237,9 +229,6 @@ footer nav a {
     text-decoration: none;
 }
 
-footer nav a:hover {
-    color: white;
-}
 
 /* ----------------------------- */
 /*      SOUS-PAGES DESTINATION   */
@@ -250,11 +239,11 @@ footer nav a:hover {
     max-width: 900px;
     margin: 40px auto; /* Centre le contenu horizontalement */
     padding: 0 20px;
-    line-height: 1.6;
+    line-height: 1.6; /*espacement vertical entre les lignes de texte*/
 }
 
 .destination-content h2 {
-    color: var(--primary); /* Utilise la couleur primaire du header */
+    color: var(--primary); 
     border-bottom: 2px solid var(--bg-light);
     padding-bottom: 5px;
     margin-top: 30px;
@@ -274,7 +263,7 @@ footer nav a:hover {
 
 /* Style de la section d'en-tête (hero) des sous-pages */
 .hero-destination {
-    height: 300px; /* Taille de l'image de fond */
+    height: 300px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,11 +274,11 @@ footer nav a:hover {
 }
 
 .hero-destination h1 {
-    font-size: 3em;
+    font-size: 3em; /*taille du texte à trois fois la taille de police de l'élément parent*/
     margin: 0;
 }
 
-/* Style des sections contenant les éléments multimédias (voir section suivante) */
+/* Style des sections contenant les éléments multimédias  */
 .media-section {
     max-width: 900px;
     margin: 40px auto;
@@ -311,12 +300,12 @@ body {
 }
 
 form {
-    max-width: 650px; /* Limite la largeur du formulaire */
+    max-width: 650px; 
     margin: 50px auto; /* Centre le formulaire sur la page */
     padding: 30px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /*ombre portée*/
 }
 
 fieldset {
@@ -327,7 +316,7 @@ fieldset {
 }
 
 legend {
-    font-size: 1.5em;
+    font-size: 1.5em; /*taille du texte à une fois et demie la taille de police de l'élément parent*/
     font-weight: bold;
     color: var(--primary);
     padding: 0 10px;
@@ -337,17 +326,16 @@ form > fieldset > label {
     display: block;
     margin-top: 30px;
     margin-bottom: 20px;
-    font-weight: bold; /* Gras */
+    font-weight: bold; 
 }
 
-/* Styles pour les groupes d'input (Nom, Prénom, etc.) */
 .form-group {
     margin-bottom: 20px;
 	margin-top:15px;
 }
 
 .form-group label {
-    display: block; /* Force le label à être sur sa propre ligne */
+    display: block; 
     margin-bottom: 5px;
     font-weight: 600;
     color: var(--text-dark);
@@ -361,7 +349,6 @@ fieldset input[type="email"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    transition: border-color 0.3s;
 }
 
 fieldset input[type="text"]:focus,
@@ -370,10 +357,9 @@ fieldset input[type="email"]:focus {
     outline: none;
 }
 
-/* Styles pour les groupes Radio et Checkbox */
 .radio-group,
 .checkbox-group {
-    display: block; /* Aligne les options horizontalement */
+    display: block; 
     gap: 25px; /* Espace entre les options */
     margin-top: 10px;
     flex-wrap: wrap; /* Permet de passer à la ligne sur mobile */
@@ -402,8 +388,6 @@ fieldset textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    transition: border-color 0.3s;
-    /* Mêmes dimensions/styles que les inputs, plus les lignes/redimensionnement */
     resize: vertical; /* Permet de redimensionner verticalement */
 }
 
@@ -412,10 +396,8 @@ fieldset textarea:focus {
     outline: none;
 }
 
-/* Styles des boutons (Réinitialiser et Envoyer) */
-.form-group + button,
+.form-group + button, /*cibler un élément button uniquement si placé immédiatement après un élément ayant la classe .form-group*/
 form > button {
-    /* Marge pour séparer les boutons du dernier champ */
     margin-top: 20px; 
 }
 
@@ -425,10 +407,9 @@ form button {
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s, opacity 0.3s;
 }
 
-/* Bouton ENVOYER (Principal) */
+
 button[type="submit"] {
     background-color: var(--primary);
     color: var(--text-light);
@@ -439,7 +420,6 @@ button[type="submit"]:hover {
     opacity: 0.9;
 }
 
-/* Bouton EFFACER (Secondaire) */
 button[type="reset"] {
     background-color: #f0f0f0;
     color: var(--text-dark);
