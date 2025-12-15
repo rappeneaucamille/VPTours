@@ -1,5 +1,3 @@
-
-
 :root { /* :root permet de définir des variables disponibles partout dans la page */
     --primary: #0077b6;   /* SOUS-PAGES */
     --accent: #0097B2;    /* ACCUEIL */
@@ -20,7 +18,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-	
 }
 
 .header nav ul {
@@ -458,4 +455,5 @@ button[type="reset"] {
 button[type="reset"]:hover {
     background-color: #ddd;
 }
+
 
