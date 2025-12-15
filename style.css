@@ -1,4 +1,5 @@
 
+
 :root { /* :root permet de définir des variables disponibles partout dans la page */
     --primary: #0077b6;   /* SOUS-PAGES */
     --accent: #0097B2;    /* ACCUEIL */
@@ -236,7 +237,12 @@ footer nav a {
     margin: 0 15px;
     text-decoration: none;
 }
-
+.app {
+	max-width: 30px;
+	display: inline-block;
+	align-items: center;
+	padding: 5px;
+}
 
 /* ----------------------------- */
 /*      SOUS-PAGES DESTINATION   */
