@@ -71,7 +71,7 @@ img {
 }
 
 .hero {
-    background: url('avion.jpg') center/cover; /* image de fond, centrée, recouvre toute la surface*/
+    background: url('../médias/avion.jpg') center/cover; /* image de fond, centrée, recouvre toute la surface*/
     padding: 120px 20px;
     text-align: center; 
     color: white;
@@ -455,5 +455,4 @@ button[type="reset"] {
 button[type="reset"]:hover {
     background-color: #ddd;
 }
-
 
