@@ -1,0 +1,458 @@
+:root { /* :root permet de définir des variables disponibles partout dans la page */
+    --primary: #0077b6;   /* SOUS-PAGES */
+    --accent: #0097B2;    /* ACCUEIL */
+    --text-dark: #222;
+    --text-light: #fff;
+    --bg-light: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0; /* enlever les marges par défaut */
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header nav a {
+    text-decoration: none;  /* enlève le soulignement */
+    color:inherit;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.header nav a:hover,
+.header nav a.active { 
+    opacity: 0.8;
+}
+
+/* HEADER ACCUEIL */
+.header-accueil {
+    background-color: var(--accent);
+	color: var(--text-light);
+}
+
+/* HEADER SOUS-PAGES */
+.header-souspage1 {
+    background-color: #ffffcc;
+	color: var(--text-dark);
+}
+.header-souspage2 {
+    background-color: #76b9f0;    
+	color:var(--text-light);
+
+}
+.header-souspage3 {
+    background-color: #2b4a3c;
+	color:var(--text-light);
+
+}
+
+header .logo {
+    width: 150px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero {
+    background: url('../médias/avion.jpg') center/cover; /* image de fond, centrée, recouvre toute la surface*/
+    padding: 120px 20px;
+    text-align: center; 
+    color: white;
+}
+
+.btn-primary {
+    display: inline-block;   /* permet d’ajouter padding */
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;           /* arrondit les coins */
+    text-decoration: none;
+}
+
+.cards-container {
+	display: flex; 
+	gap: 30px; 
+	justify-content: center; 
+	padding: 50px;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 300px; 
+	padding: 15px; 
+	background: white; 
+	border-radius: 10px; 
+	text-align: center; 
+	text-decoration: none; 
+	color: black; 
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1); /*ombre portée*/
+}
+
+.card:hover{
+	transform: translateY(-8px); /*déplacer l'élément de 8 pixels vers le haut*/
+	box-shadow: 0 8px 20px rgba(0,0,0,0.2) /*ombre portée*/
+}
+
+.card img {
+	width: 100%; 
+	height: 200px;
+	object-fit: cover; 
+	border-radius: 8px;
+}
+
+.card h3 {
+	margin: 10px 0 5px; 
+	font-size:18px;
+}
+
+.card p{
+	font-size: 14px;
+}
+
+.tab{
+	text-align: center; 
+	padding: 40px;
+}
+
+.title{
+	text-align: center;
+	padding: 30px;
+	color: #244A73;
+	font-family: Montserrat, sans-serif;
+}
+
+table.comparative {
+    width: 80%;                 
+    margin: auto;               /* centre le tableau */
+    border-collapse: collapse;  /* supprime espaces entre cellules */
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ombre portée */
+    border-radius: 10px;
+    overflow: hidden;           /* permet arrondi complet */
+}
+
+.comparative th {
+    background: #0097B2;    
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.comparative td {
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd; /* ligne séparatrice légère */
+}
+
+/* Alternance des couleurs des lignes */
+.comparative tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+/* Survol d’une ligne : effet interactif */
+.comparative tr:hover {
+    background: #dff6ff;
+}
+
+.contact-section {
+    padding: 50px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;    /* les éléments les uns sous les autres */
+    width: 50%;
+    margin: auto;              /* centre le formulaire */
+    gap: 15px;                 /* espace entre champs */
+}
+
+/* style des champs */
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;          /* l’utilisateur peut l’agrandir */
+}
+
+
+.opinion-section {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.btn-secondary {
+    padding: 12px 25px;
+    background: #00b4d8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background: #0091ad;
+}
+
+footer {
+    background: #023047;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer nav a {
+    color: #90e0ef;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.app {
+	max-width: 30px;
+	display: inline-block;
+	align-items: center;
+	padding: 5px;
+}
+
+/* ----------------------------- */
+/*      SOUS-PAGES DESTINATION   */
+/* ----------------------------- */
+
+/* Contenu principal, centré et aéré */
+.destination-content {
+    max-width: 900px;
+    margin: 40px auto; /* Centre le contenu horizontalement */
+    padding: 0 20px;
+    line-height: 1.6; /*espacement vertical entre les lignes de texte*/
+}
+
+.destination-content h2 {
+    color: var(--primary); 
+    border-bottom: 2px solid var(--bg-light);
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.destination-content ul {
+    list-style: disc; /* Style des listes */
+    margin-left: 25px;
+    padding-left: 0;
+}
+
+.loc-container {	
+	display: flex;
+	justify-content : space-between;
+	max-width: 1100px;
+}
+
+.loc-container .txt {
+	width: 65%;
+}
+
+.loc-container .loc {
+	width: 15%;
+	text-align: right;
+}
+	
+.destination-content p strong {
+    color: var(--text-dark); /* Met en évidence les titres de paragraphes */
+}
+
+
+/* Style de la section d'en-tête (hero) des sous-pages */
+.hero-destination {
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour rendre le texte lisible sur l'image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-destination h1 {
+    font-size: 3em; /*taille du texte à trois fois la taille de police de l'élément parent*/
+    margin: 0;
+}
+
+/* Style des sections contenant les éléments multimédias  */
+.media-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Style pour centrer les vidéos et musique */
+.video-container, .audio-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ------------------------------------- */
+/*      FORMULAIRE DE SATISFACTION       */
+/* ------------------------------------- */
+
+body {
+    background-color: var(--bg-light); /* Arrière-plan général clair pour faire ressortir le formulaire */
+}
+
+form {
+    max-width: 650px; 
+    margin: 50px auto; /* Centre le formulaire sur la page */
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /*ombre portée*/
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 1.5em; /*taille du texte à une fois et demie la taille de police de l'élément parent*/
+    font-weight: bold;
+    color: var(--primary);
+    padding: 0 10px;
+}
+
+form > fieldset > label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+	margin-top:15px;
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Style des champs de texte et email */
+fieldset input[type="text"],
+fieldset input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+fieldset input[type="text"]:focus,
+fieldset input[type="email"]:focus {
+    border-color: var(--primary); /* Met en évidence le champ actif */
+    outline: none;
+}
+
+.radio-group,
+.checkbox-group {
+    display: block; 
+    gap: 25px; /* Espace entre les options */
+    margin-top: 10px;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur mobile */
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center; /* Aligne le label et l'input verticalement */
+	margin-bottom:8px;
+}
+
+/* Style des labels cliquables pour radio/checkbox */
+.radio-option label,
+.checkbox-option label {
+    display: inline; /* Annule display: block; pour les radio/checkbox */
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* Style du Textarea */
+fieldset textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical; /* Permet de redimensionner verticalement */
+}
+
+fieldset textarea:focus {
+    border-color: var(--primary); /* Met en évidence le champ actif */
+    outline: none;
+}
+
+.form-group + button, /*cibler un élément button uniquement si placé immédiatement après un élément ayant la classe .form-group*/
+form > button {
+    margin-top: 20px; 
+}
+
+form button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button[type="submit"] {
+    background-color: var(--primary);
+    color: var(--text-light);
+    margin-left: 10px;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+button[type="reset"] {
+    background-color: #f0f0f0;
+    color: var(--text-dark);
+    border: 1px solid #ccc;
+}
+
+button[type="reset"]:hover {
+    background-color: #ddd;
+}
+
