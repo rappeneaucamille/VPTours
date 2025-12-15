@@ -1,5 +1,4 @@
-/* :root permet de définir des variables disponibles partout dans la page */
-:root {
+:root { /* :root permet de définir des variables disponibles partout dans la page */
     --primary: #0077b6;   /* SOUS-PAGES */
     --accent: #0097B2;    /* ACCUEIL */
     --text-dark: #222;
@@ -8,7 +7,7 @@
 }
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box; /* C'est la règle magique ! */
     margin: 0; /* Optionnel, mais fortement recommandé pour enlever les marges par défaut */
     padding: 0;
 }
@@ -131,7 +130,7 @@ img {
 	font-size: 14px;
 }
 
-.tableau{
+.table{
 	text-align: center; 
 	padding: 40px;
 }
@@ -450,4 +449,3 @@ button[type="reset"] {
 button[type="reset"]:hover {
     background-color: #ddd;
 }
-
