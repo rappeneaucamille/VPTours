@@ -134,6 +134,13 @@ img {
 	padding: 40px;
 }
 
+.title{
+	text-align: center;
+	padding: 30px;
+	color: #244A73;
+	font-family: Montserrat, sans-serif;
+}
+
 table.comparative {
     width: 80%;                 
     margin: auto;               /* centre le tableau */
@@ -445,3 +452,4 @@ button[type="reset"] {
 button[type="reset"]:hover {
     background-color: #ddd;
 }
+
