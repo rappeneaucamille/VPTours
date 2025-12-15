@@ -1,3 +1,4 @@
+
 :root { /* :root permet de définir des variables disponibles partout dans la page */
     --primary: #0077b6;   /* SOUS-PAGES */
     --accent: #0097B2;    /* ACCUEIL */
@@ -231,7 +232,7 @@ footer nav a {
 
 
 /* ----------------------------- */
-/*      SOUS-PAGES DESTINATION   */
+/*      SOUS-PAGES DESTINATION   */
 /* ----------------------------- */
 
 /* Contenu principal, centré et aéré */
@@ -256,6 +257,21 @@ footer nav a {
     padding-left: 0;
 }
 
+.loc-container {	
+	display: flex;
+	justify-content : space-between;
+	max-width: 1100px;
+}
+
+.loc-container .txt {
+	width: 65%;
+}
+
+.loc-container .loc {
+	width: 15%;
+	text-align: right;
+}
+	
 .destination-content p strong {
     color: var(--text-dark); /* Met en évidence les titres de paragraphes */
 }
@@ -292,7 +308,7 @@ footer nav a {
 }
 
 /* ------------------------------------- */
-/*      FORMULAIRE DE SATISFACTION       */
+/*      FORMULAIRE DE SATISFACTION       */
 /* ------------------------------------- */
 
 body {
